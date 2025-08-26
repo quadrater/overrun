@@ -1,0 +1,14 @@
+[package]
+name = "overrun"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "overrun"
+path = "overrun.rs"
+
+[dependencies]
+clap = { version = "*", features = ["derive"] }
+tempfile = "*"
+lms = { path = "../LuminS" }
+libc = "*"
